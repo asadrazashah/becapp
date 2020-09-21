@@ -9,8 +9,9 @@ interface IProps {
     placeholder?: string;
     iconClass?: string;
     onBlur?: any;
+    style?: object;
 }
-const InputIcon: React.FC<IProps> = ({ iconClass, onChange, onBlur, value, name, type, placeholder }) => {
+const InputIcon: React.FC<IProps> = ({ style, iconClass, onChange, onBlur, value, name, type, placeholder }) => {
     return <div className="wrapperInput">
         <div>
             <input
@@ -21,6 +22,7 @@ const InputIcon: React.FC<IProps> = ({ iconClass, onChange, onBlur, value, name,
                 value={value}
                 name={name}
                 type={type}
+                style={style}
                 autoComplete="off"
             />
         </div>

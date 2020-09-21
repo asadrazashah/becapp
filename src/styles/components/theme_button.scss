@@ -1,0 +1,22 @@
+@import "../Theme.scss";
+.themeBtn {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  background-color: #f1c644;
+  color: #fff;
+  text-transform: none;
+  border: none;
+  border-radius: none;
+  width: 100%;
+  background-color: $golden;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  height: 44px;
+}
+
+@media (max-width: 680px) {
+  .themeBtn {
+    font-size: 12px;
+    padding: 10px 30px;
+  }
+}

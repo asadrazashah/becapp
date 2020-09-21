@@ -8,6 +8,7 @@
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.06);
 }
 .loginImg {
+  padding: 10px 10px;
   width: 500px;
   height: 500px;
   .img {
@@ -18,5 +19,57 @@
 }
 .headingAuth {
   font-size: 36px;
-  font-size: 700;
+  font-weight: 800;
+}
+.wrapperForm {
+  padding: 30px 60px 30px 10px;
+  .rememberMe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #666666;
+    padding-bottom: 40px;
+    span {
+      vertical-align: middle;
+    }
+  }
+}
+.checkbox {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.containerBtnLogin {
+  display: flex;
+  vertical-align: middle;
+}
+@media (max-width: 1150px) {
+  .loginImg {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 979px) {
+  .wrapAuthScreens {
+    padding: 2em 4em;
+  }
+}
+@media (max-width: 680px) {
+  .wrapAuthScreens {
+    padding: 1em 3em;
+  }
+  .loginImg {
+    width: 300px;
+    height: 300px;
+  }
+  .checkbox {
+    width: 12px;
+    height: 12px;
+  }
+  .rememberMe {
+    font-size: 12px;
+    flex-direction: column;
+  }
 }
