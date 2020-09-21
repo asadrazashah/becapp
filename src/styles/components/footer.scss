@@ -1,0 +1,77 @@
+.footerBack {
+  background: url("../../assets/footer_back.png");
+  background-size: contain;
+  width: 100%;
+  height: 314px;
+}
+.footerBottom {
+  height: 46px;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  p {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    padding-left: 9%;
+  }
+}
+
+.logoFooterWrap {
+  margin-left: auto;
+  height: 211px;
+  width: 256px;
+}
+.logoFooter {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.wrapperLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 50px;
+  padding-left: 10%;
+}
+.headingFooter {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+#link {
+  text-decoration: none;
+  color: #fff;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: normal;
+}
+.getInTouch {
+  margin-top: 50px;
+  padding-left: 10%;
+}
+.paymentImg {
+  width: 282px;
+  height: 64px;
+}
+.socialIcons {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+@media (max-width: 959px) {
+  .footerBack {
+    height: 628px;
+  }
+  .socialIcons {
+    width: 100px;
+  }
+  .paymentImg {
+    width: 120px;
+  }
+}
