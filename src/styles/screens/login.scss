@@ -9,8 +9,6 @@
 }
 .loginImg {
   padding: 10px 10px;
-  width: 500px;
-  height: 500px;
   .img {
     width: 100%;
     height: 100%;
@@ -53,12 +51,7 @@
   display: flex;
   vertical-align: middle;
 }
-@media (max-width: 1150px) {
-  .loginImg {
-    width: 400px;
-    height: 400px;
-  }
-}
+
 @media (max-width: 979px) {
   .wrapAuthScreens {
     padding: 2em 4em;
@@ -67,10 +60,6 @@
 @media (max-width: 680px) {
   .wrapAuthScreens {
     padding: 1em 3em;
-  }
-  .loginImg {
-    width: 300px;
-    height: 300px;
   }
   .checkbox {
     width: 12px;
