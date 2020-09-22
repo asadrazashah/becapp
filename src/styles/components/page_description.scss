@@ -1,0 +1,36 @@
+.containerDescription {
+  height: 252px;
+  width: 100%;
+  position: relative;
+  //   background: url("../../assets/truck.png");
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  h2 {
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    font-size: 34px;
+    font-weight: 700px;
+    line-height: 51px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  p {
+    position: absolute;
+    top: 85%;
+    left: 85%;
+    color: #fff;
+    font-size: 14px;
+  }
+}
