@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
+import InputSelect from "../components/InputSelect";
 import InputIcon from "../components/InputIcon";
 import RegisterImg from "../assets/register.png";
 import ThemeButton from "../components/ThemeButton";
@@ -22,7 +23,7 @@ const Register: React.FC = () => {
                         <InputIcon placeholder="Email ID" iconClass="iconPerson" type="email" />
                         <InputIcon placeholder="Mobile Number" iconClass="iconPerson" type="text" />
                         <InputIcon placeholder="Password" iconClass="iconLock" type="password" />
-
+                        <InputSelect label="Select Account Type" />
                         <div className="containerBtnLogin">
                             <ThemeButton title="Register Now" />
                             <ThemeButton title="Login" style={{ marginLeft: "20px", backgroundColor: Colors.white, color: Colors.grey }} />
