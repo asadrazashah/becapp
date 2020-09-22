@@ -1,0 +1,51 @@
+.topHeaderBar {
+  height: 62px;
+  background-color: #eee;
+  padding: 0px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionLast {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+  span {
+    cursor: pointer;
+  }
+  .avatar {
+    img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  .info {
+    display: flex;
+    flex-wrap: nowrap;
+    p {
+      font-size: 18px;
+      padding-right: 5px;
+    }
+    span {
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .sectionLast {
+    width: 30%;
+  }
+}
+@media (max-width: 960px) {
+  .sectionLast {
+    width: 50%;
+  }
+}
+@media (max-width: 580px) {
+  .sectionLast {
+    width: 50%;
+  }
+}
