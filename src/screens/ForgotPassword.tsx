@@ -17,7 +17,7 @@ const ForgotPassword: React.FC = () => {
                 <Grid item xs={12} sm={12} md={6} lg={6}>
                     <div className="wrapperForm">
                         <h1 className="headingAuth">Forgot Password</h1>
-                        <InputIcon placeholder="Mobile Number" iconClass="iconPerson" type="email" style={{ marginTop: "70px" }} />
+                        <InputIcon placeholder="Mobile Number" iconClass="iconPerson" type="email" style={{ marginTop: "60px" }} />
 
                         <ThemeButton title="Send OTP" />
                     </div>
