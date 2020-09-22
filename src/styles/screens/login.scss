@@ -23,6 +23,14 @@
 }
 .wrapperForm {
   padding: 30px 60px 30px 10px;
+  p {
+    font-size: 18px;
+    font-weight: 300;
+    color: $greyText;
+    line-height: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
   .rememberMe {
     display: flex;
     justify-content: space-between;

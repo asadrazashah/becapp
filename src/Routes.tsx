@@ -4,6 +4,7 @@ import Login from "./screens/Login";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ForgotPassword from './screens/ForgotPassword';
+import NewPassword from './screens/NewPassword';
 function Routes() {
     return (
         <Router>
@@ -11,6 +12,7 @@ function Routes() {
             <Switch>
                 <Route exact path="/" component={Login} />
                 <Route exact path="/forgot-password" component={ForgotPassword} />
+                <Route exact path="/reset-password" component={NewPassword} />
             </Switch>
             <Footer />
         </Router>
