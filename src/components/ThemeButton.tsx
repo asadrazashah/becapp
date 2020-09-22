@@ -4,8 +4,9 @@ interface IProps {
     title: string;
     onClick?: () => void;
     style?: object;
+    borderRadius?: string;
 }
-const ThemeButton: React.FC<IProps> = ({ title, onClick, style }) => {
-    return <button onClick={onClick} className="themeBtn" style={{ ...style }} >{title}</button>
+const ThemeButton: React.FC<IProps> = ({ title, onClick, style, borderRadius }) => {
+    return <button onClick={onClick} className={`themeBtn ${borderRadius}`} style={{ ...style }} >{title}</button>
 }
 export default ThemeButton;
