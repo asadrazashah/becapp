@@ -8,6 +8,7 @@ import ForgotPassword from './screens/ForgotPassword';
 import NewPassword from './screens/NewPassword';
 import Register from "./screens/Register";
 import AboutUs from './screens/AboutUs';
+import Jobs from './screens/Jobs';
 
 function Routes() {
     let auth = true;
@@ -27,8 +28,9 @@ function Routes() {
             {auth && <>
                 <Header />
                 <Switch>
-                    <Route exact path="/home" component={Login} />
+                    <Route exact path="/" component={Login} />
                     <Route exact path="/home/about" component={AboutUs} />
+                    <Route exact path="/home/myjobs" component={Jobs} />
                 </Switch>
             </>}
             <Footer />
