@@ -3,6 +3,8 @@ import { Grid } from "@material-ui/core";
 import content from "../constants/content.json";
 import DescriptionPage from "../components/DescriptionPage"
 import Testimonial from "../components/Testimonial";
+import ServiceCard from "../components/ServiceCard";
+import serviceData from "../constants/servicesData";
 import e1 from "../assets/e1.png";
 import e2 from "../assets/e2.png";
 import e3 from "../assets/e3.png";
@@ -34,8 +36,12 @@ const AboutUs: React.FC = () => {
         <div className="wrapperService">
             <h3 className="aboutHeading">SERVICE</h3>
             <h4 className="heading">OUR SERVICE</h4>
-            <Grid container>
-
+            <Grid container style={{ paddingRight: "10%", paddingLeft: "10%" }}>
+                {serviceData.map((service: any) => {
+                    return (<Grid item xs={12} sm={12} md={4}>
+                        <ServiceCard service={service} />
+                    </Grid>)
+                })}
             </Grid>
         </div>
         <div className="wrapperService">
