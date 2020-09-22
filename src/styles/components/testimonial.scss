@@ -1,0 +1,40 @@
+.wrapperTestimonial {
+  height: 415px;
+  width: 100%;
+}
+.dark {
+  background: url("../../assets/testimonial.png");
+}
+.light {
+  background: url("../../assets/testimonial_light.png");
+}
+.testimonialContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  p {
+    color: white;
+    text-align: center;
+    padding: 20px 150px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  h4 {
+    color: white;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 580px) {
+  .testimonialContent {
+    p {
+      padding: 10px 20px;
+    }
+  }
+}
