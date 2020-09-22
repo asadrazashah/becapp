@@ -1,0 +1,91 @@
+.contentAbout {
+  padding: 0em 1em 4em 8em;
+  h4 {
+    top: 80px;
+    position: absolute;
+    font-size: 34px;
+    font-weight: bold;
+  }
+  p {
+    font-weight: normal;
+    font-size: 16px;
+    color: #999;
+  }
+}
+.aboutHeading {
+  padding-top: 20px;
+  font-size: 110px;
+  font-weight: bold;
+  color: #f4f4f4;
+}
+.gridAbout {
+  position: relative;
+}
+.ellipse {
+  background: url(../../assets/eBack.png);
+  width: 111px;
+  height: 111px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.gridEllipse {
+  position: relative;
+  .ellipse {
+    position: absolute;
+  }
+  .a {
+    top: 10%;
+    left: 20%;
+  }
+  .b {
+    top: 15%;
+    left: 55%;
+  }
+  .c {
+    top: 35%;
+    left: 35%;
+  }
+  .d {
+    top: 40%;
+    left: 5%;
+  }
+  .e {
+    top: 55%;
+    left: 60%;
+  }
+  .f {
+    top: 70%;
+    left: 30%;
+  }
+}
+.wrapperService {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .heading {
+    top: 125px;
+    position: absolute;
+    font-size: 34px;
+    font-weight: bold;
+    padding-left: 4em;
+  }
+}
+.chooseUsCards {
+  border: 1px solid #eee;
+  padding: 20px 40px;
+  margin: 0px 10px;
+  h3 {
+    font-size: 18px;
+    font-weight: 800;
+    padding-bottom: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
