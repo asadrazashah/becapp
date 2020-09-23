@@ -30,8 +30,7 @@ function Routes() {
             {auth && <>
                 <Header />
                 <Switch>
-                    <Route exact path="/" component={Login} />
-                    <Route exact path="/home/about" component={AboutUs} />
+                    <Route exact path="/" component={AboutUs} />
                     <Route exact path="/home/myjobs" component={MyJobs} />
                     <Route exact path="/home/findwork" component={FindWork} />
                     <Route exact path="/home/saved" component={SavedPosts} />

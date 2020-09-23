@@ -1,7 +1,7 @@
 @import "../Theme.scss";
 .jobCard {
-  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.06);
-  padding: 25px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.08);
+  padding: 25px 25px 20px 25px;
   h4 {
     font-size: 14px;
     font-weight: 800;
@@ -13,34 +13,64 @@
     line-height: 21px;
     color: #727272;
   }
-  .intro {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    img {
-      width: 48px;
-      height: 48px;
-    }
-    h3 {
-      color: $brown;
-      font-size: 22px;
-      font-weight: 700;
-      margin-left: 10px;
-    }
-  }
 }
 .jobDetails {
   padding: 20px 0px;
   display: flex;
-  .rating {
-    color: $brown;
-    margin-right: 25px;
-  }
+  flex-direction: column;
   .budget {
     display: flex;
-    h5 {
-      font-weight: 500;
-      font-size: 16px;
+    align-items: center;
+    padding: 5px 0px;
+    .time {
+      margin-right: 25px;
+      :nth-child(1) {
+        font-size: 16px;
+        font-weight: 500;
+      }
+      :nth-child(2) {
+        font-size: 16px;
+        font-weight: 300;
+      }
     }
+  }
+  .ratings {
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+    .rating {
+      color: $brown;
+      font-weight: bold;
+      font-size: 14px;
+      margin-right: 20px;
+    }
+    .saved {
+      display: flex;
+      align-items: center;
+      .line {
+        border-left: 1px solid #000;
+        height: 30px;
+        vertical-align: middle;
+      }
+      .heartIcon {
+        margin-left: 20px;
+        width: 25px;
+        height: 22.24px;
+      }
+    }
+  }
+}
+.verified {
+  display: flex;
+  align-items: center;
+  padding: 0px 30px;
+  .verifiedIcon {
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+  }
+  :nth-child(2) {
+    color: #000;
+    font-size: 16px;
   }
 }
