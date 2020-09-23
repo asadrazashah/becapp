@@ -1,0 +1,19 @@
+.searchBox {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  h2 {
+    font-size: 16px;
+    padding: 15px 15px;
+    border-bottom: 1px solid #eee;
+  }
+  input {
+    margin: 20px 15px;
+    padding: 10px;
+    outline: none;
+    border-radius: 50px;
+    width: 80%;
+    border: 1px solid #cdcdcd;
+    text-indent: 15px;
+  }
+}
