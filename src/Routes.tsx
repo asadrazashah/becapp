@@ -14,6 +14,7 @@ import SavedPosts from './screens/SavedPosts';
 import ContactUs from './screens/ContactUs';
 import Profile from './screens/Profile';
 import Reviews from "./screens/Reviews";
+import TrackOrder from './screens/TrackOrder';
 
 function Routes() {
     let auth = true;
@@ -40,6 +41,7 @@ function Routes() {
                     <Route exact path="/home/contact" component={ContactUs} />
                     <Route exact path="/home/profile" component={Profile} />
                     <Route exact path="/reviews" component={Reviews} />
+                    <Route exact path="/trackorder" component={TrackOrder} />
                 </Switch>
             </>}
             <Footer />
