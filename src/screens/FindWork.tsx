@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import DescriptionPage from "../components/DescriptionPage";
+import ProposalFeedCards from "../components/ProposalFeedCards";
 import SearchBox from "../components/SearchBox";
 import JobCard from "../components/JobCard";
 import * as Constants from "../constants";
@@ -17,7 +18,10 @@ const FindWork: React.FC = () => {
                     <JobCard job={Constants.jobData} />
                 </Grid>
                 <Grid item xs={12} sm={12} md={3} lg={3}>
-                    <SearchBox />
+                    <div className="sidebarCards">
+                        <SearchBox />
+                        <ProposalFeedCards />
+                    </div>
                 </Grid>
             </Grid>
         </div>

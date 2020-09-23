@@ -1,0 +1,39 @@
+.myFeed {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  margin: 15px 0px;
+  padding: 20px 15px;
+  .heading {
+    display: flex;
+    :nth-child(1) {
+      border-left: 5px solid #f1c644;
+      height: 10px;
+      margin-right: 10px;
+    }
+    :nth-child(2) {
+      font-size: 14px;
+      color: #f1c644;
+    }
+  }
+  p {
+    padding-top: 15px;
+    font-size: 14px;
+    color: #999999;
+  }
+}
+.proposals {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  h2 {
+    font-size: 16px;
+    padding: 15px 15px;
+    border-bottom: 1px solid #eee;
+  }
+  .details {
+    padding: 20px 15px;
+    font-size: 14px;
+    color: #999999;
+  }
+}
