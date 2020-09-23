@@ -1,6 +1,7 @@
 import React from "react";
 import DescriptionPage from "../components/DescriptionPage";
 import FeedbackCard from "../components/FeedbackCard";
+import ThemeButton from "../components/ThemeButton";
 import content from "../constants/content.json";
 import profileImg from "../assets/profile_avatar.png";
 import "../styles/screens/profile.scss";
@@ -23,6 +24,9 @@ const Profile: React.FC = () => {
             <h3 className="workHistory">Work History and feedback</h3>
             <FeedbackCard />
             <FeedbackCard />
+            <div className="viewAllBtn">
+                <ThemeButton title="View All" style={{ backgroundColor: "#000", color: '#fff', width: "228px", height: "60px", fontSize: "20px" }} borderRadius="withRadius" />
+            </div>
         </div>
     </>
 }
