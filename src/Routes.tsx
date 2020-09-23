@@ -12,6 +12,7 @@ import MyJobs from './screens/MyJobs';
 import FindWork from './screens/FindWork';
 import SavedPosts from './screens/SavedPosts';
 import ContactUs from './screens/ContactUs';
+import Profile from './screens/Profile';
 
 function Routes() {
     let auth = true;
@@ -36,6 +37,7 @@ function Routes() {
                     <Route exact path="/home/findwork" component={FindWork} />
                     <Route exact path="/home/saved" component={SavedPosts} />
                     <Route exact path="/home/contact" component={ContactUs} />
+                    <Route exact path="/home/profile" component={Profile} />
                 </Switch>
             </>}
             <Footer />
