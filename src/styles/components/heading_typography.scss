@@ -1,0 +1,15 @@
+.typography {
+  position: relative;
+  .back {
+    font-size: 110px;
+    font-weight: bold;
+    color: #f4f4f4;
+  }
+  .front {
+    top: 55px;
+    position: absolute;
+    font-size: 34px;
+    font-weight: bold;
+    padding-left: 4em;
+  }
+}

@@ -1,0 +1,12 @@
+.reviews {
+  padding: 20px 4em;
+}
+.wrapperReviewInput {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 0px;
+  .selectReview {
+    width: 30%;
+  }
+}
