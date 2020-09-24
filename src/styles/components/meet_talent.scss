@@ -1,0 +1,37 @@
+@import "../Theme.scss";
+.talentCard {
+  border: 1px solid #eeeeee;
+  padding: 20px 15px;
+  .header {
+    display: flex;
+    align-items: center;
+    .profileImg {
+      margin-right: 20px;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .profileInfo {
+    .name {
+      font-size: 18px;
+      font-weight: 700;
+      color: #000;
+    }
+    .rating {
+      font-weight: bold;
+      font-size: 12px;
+      color: $brown;
+    }
+  }
+  p {
+    color: #99879d;
+    font-weight: normal;
+    font-size: 14px;
+  }
+}
