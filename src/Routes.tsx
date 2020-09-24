@@ -15,6 +15,7 @@ import ContactUs from './screens/ContactUs';
 import Profile from './screens/Profile';
 import Reviews from "./screens/Reviews";
 import TrackOrder from './screens/TrackOrder';
+import PostJob from './screens/PostJob';
 
 function Routes() {
     let auth = true;
@@ -42,6 +43,7 @@ function Routes() {
                     <Route exact path="/home/profile" component={Profile} />
                     <Route exact path="/reviews" component={Reviews} />
                     <Route exact path="/trackorder" component={TrackOrder} />
+                    <Route exact path="/home/postjob" component={PostJob} />
                 </Switch>
             </>}
             <Footer />
