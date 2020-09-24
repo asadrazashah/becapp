@@ -1,5 +1,5 @@
 import React from "react";
-import { Stepper, Step, StepLabel, Grid } from "@material-ui/core";
+import { Stepper, Step, StepLabel, Grid, StylesProvider } from "@material-ui/core";
 import DescriptionPage from "../components/DescriptionPage";
 import HeadingTypography from "../components/HeadingTypography";
 import Testimonial from "../components/Testimonial";
@@ -17,13 +17,15 @@ const HowItWorks: React.FC = () => {
             <h1>Hire in-demand, remote talent in three easy steps. </h1>
             <p>{constants.howitworks}</p>
             <div className="steps">
-                <Stepper alternativeLabel activeStep={-1} >
-                    {steps.map((label) => (
-                        <Step key={label}>
-                            <StepLabel >{label}</StepLabel>
-                        </Step>
-                    ))}
-                </Stepper>
+                <StylesProvider injectFirst>
+                    <Stepper alternativeLabel activeStep={-1} >
+                        {steps.map((label) => (
+                            <Step key={label}>
+                                <StepLabel >{label}</StepLabel>
+                            </Step>
+                        ))}
+                    </Stepper>
+                </StylesProvider>
                 <Grid container>
                     <Grid item xs={4}><p className="stepsWorks">{constants.howitworksOne}</p></Grid>
                     <Grid item xs={4}><p className="stepsWorks">{constants.howitworksTwo}</p></Grid>
@@ -32,9 +34,18 @@ const HowItWorks: React.FC = () => {
             </div>
         </div>
         <HeadingTypography backText="MEET THE TALENT" frontText="MEET THE TALENT" />
-        <div>
-            <MeetTalentCard talent={Data.meetTalentCard} />
-        </div>
+        <Grid container style={{ padding: "5% 10%" }}>
+            <Grid item xs={12} sm={12} md={4}>
+                <MeetTalentCard talent={Data.meetTalentCard} />
+            </Grid>
+            <Grid item xs={12} sm={12} md={4}>
+                <MeetTalentCard talent={Data.meetTalentCard} />
+            </Grid>
+            <Grid item xs={12} sm={12} md={4}>
+                <MeetTalentCard talent={Data.meetTalentCard} />
+            </Grid>
+
+        </Grid>
         <Testimonial overlay="light" />
     </>
 }

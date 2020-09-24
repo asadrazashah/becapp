@@ -1,7 +1,9 @@
 @import "../Theme.scss";
 .talentCard {
   border: 1px solid #eeeeee;
-  padding: 20px 15px;
+  padding: 40px 20px;
+  margin: 0px 5px;
+  position: relative;
   .header {
     display: flex;
     align-items: center;
@@ -30,8 +32,17 @@
     }
   }
   p {
+    padding-top: 20px;
     color: #99879d;
     font-weight: normal;
     font-size: 14px;
+  }
+  .line {
+    position: absolute;
+    border-top: 1px solid $golden;
+    margin: 0px 25%;
+    top: 0;
+    left: 0;
+    right: 0;
   }
 }

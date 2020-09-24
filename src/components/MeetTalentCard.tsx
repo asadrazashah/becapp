@@ -12,6 +12,7 @@ interface IProps {
 const MeetTalentCard: React.FC<IProps> = ({ talent }) => {
     const { name, description, profileImg } = talent;
     return <div className="talentCard">
+        <div className="line"></div>
         <div className="header">
             <div className="profileImg"><img src={profileImg} alt="avatar" /></div>
             <div className="profileInfo">
