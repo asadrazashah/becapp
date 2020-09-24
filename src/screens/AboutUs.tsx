@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
+import HeadingTypography from "../components/HeadingTypography";
 import content from "../constants/content.json";
 import DescriptionPage from "../components/DescriptionPage"
 import Testimonial from "../components/Testimonial";
@@ -18,9 +19,8 @@ const AboutUs: React.FC = () => {
         <DescriptionPage title="ABOUT US" link="ABOUT" />
         <Grid container>
             <Grid item xs={12} sm={12} md={6} className="gridAbout">
-                <h3 className="aboutHeading">ABOUT</h3>
+                <HeadingTypography backText="ABOUT" frontText="ABOUT US" />
                 <div className="contentAbout">
-                    <h4>ABOUT US</h4>
                     <p>{content.aboutUs}</p>
                 </div>
             </Grid>
@@ -34,8 +34,7 @@ const AboutUs: React.FC = () => {
             </Grid>
         </Grid>
         <div className="wrapperService">
-            <h3 className="aboutHeading">SERVICE</h3>
-            <h4 className="heading">OUR SERVICE</h4>
+            <HeadingTypography backText="Service" frontText="Our service" />
             <Grid container style={{ paddingRight: "10%", paddingLeft: "10%" }}>
                 {serviceData.map((service: any) => {
                     return (<Grid item xs={12} sm={12} md={4}>
@@ -45,8 +44,7 @@ const AboutUs: React.FC = () => {
             </Grid>
         </div>
         <div className="wrapperService">
-            <h3 className="aboutHeading">WHY US</h3>
-            <h4 className="heading">WHY CHOOSE US</h4>
+            <HeadingTypography backText="why us" frontText="why choose us" />
             <Grid container style={{ paddingRight: "10%", paddingLeft: "10%" }}>
                 <Grid item xs={12} sm={12} md={4}>
                     <div className="chooseUsCards">
