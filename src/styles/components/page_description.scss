@@ -22,8 +22,16 @@
   p {
     position: absolute;
     top: 85%;
-    left: 85%;
+    left: 75%;
     color: #fff;
     font-size: 14px;
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 580px) {
+  .containerDescription {
+    p {
+      left: 60%;
+    }
   }
 }
