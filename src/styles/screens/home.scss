@@ -1,0 +1,34 @@
+.landingImg {
+  background: url("../../assets/landingPage.png");
+  width: 100%;
+  height: 898px;
+  position: relative;
+  background-color: #000;
+  .txtHeading {
+    padding: 15% 10% 0% 10%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h4 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 36px;
+    }
+  }
+  .landingBigHeading {
+    padding: 5% 10% 0% 10%;
+    font-weight: bold;
+    font-size: 96px;
+    text-align: center;
+    font-style: normal;
+    line-height: 100%;
+    color: #fff;
+    span {
+      color: #f1c644;
+    }
+  }
+}
+.aboutUsLanding {
+  padding-top: 100px;
+}

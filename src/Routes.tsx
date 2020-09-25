@@ -18,6 +18,7 @@ import TrackOrder from './screens/TrackOrder';
 import PostJob from './screens/PostJob';
 import HowItWorks from './screens/HowItWorks';
 import JobDetails from './screens/JobDetails';
+import Home from "./screens/Home";
 
 function Routes() {
     let auth = true;
@@ -37,7 +38,8 @@ function Routes() {
             {auth && <>
                 <Header />
                 <Switch>
-                    <Route exact path="/" component={AboutUs} />
+                    <Route exact path="/home" component={Home} />
+                    <Route exact path="/home/about" component={AboutUs} />
                     <Route exact path="/home/myjobs" component={MyJobs} />
                     <Route exact path="/home/findwork" component={FindWork} />
                     <Route exact path="/home/saved" component={SavedPosts} />
