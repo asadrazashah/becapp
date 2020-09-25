@@ -6,12 +6,7 @@ import DescriptionPage from "../components/DescriptionPage"
 import Testimonial from "../components/Testimonial";
 import ServiceCard from "../components/ServiceCard";
 import serviceData from "../constants/servicesData";
-import e1 from "../assets/e1.png";
-import e2 from "../assets/e2.png";
-import e3 from "../assets/e3.png";
-import e4 from "../assets/e4.png";
-import e5 from "../assets/e5.png";
-import e6 from "../assets/e6.png";
+import images from "../constants/images";
 import "../styles/screens/about_us.scss"
 
 const AboutUs: React.FC = () => {
@@ -25,12 +20,12 @@ const AboutUs: React.FC = () => {
                 </div>
             </Grid>
             <Grid item xs={12} sm={12} md={6} className="gridEllipse" style={{ height: "500px", padding: "10% 10%" }}>
-                <span className="ellipse a"><img src={e2} alt="ellipse" /></span>
-                <span className="ellipse b"><img src={e4} alt="ellipse" /></span>
-                <span className="ellipse c"><img src={e3} alt="ellipse" /></span>
-                <span className="ellipse d"><img src={e1} alt="ellipse" /></span>
-                <span className="ellipse e"><img src={e6} alt="ellipse" /></span>
-                <span className="ellipse f"><img src={e5} alt="ellipse" /></span>
+                <span className="ellipse a"><img src={images.e2} alt="ellipse" /></span>
+                <span className="ellipse b"><img src={images.e4} alt="ellipse" /></span>
+                <span className="ellipse c"><img src={images.e3} alt="ellipse" /></span>
+                <span className="ellipse d"><img src={images.e1} alt="ellipse" /></span>
+                <span className="ellipse e"><img src={images.e6} alt="ellipse" /></span>
+                <span className="ellipse f"><img src={images.e5} alt="ellipse" /></span>
             </Grid>
         </Grid>
         <div className="wrapperService">
