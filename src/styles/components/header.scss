@@ -1,7 +1,7 @@
 .topHeaderBar {
   height: 62px;
   background-color: #eee;
-  padding: 0px 70px;
+  padding: 0px 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,7 +11,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 25%;
+  width: 300px;
+  .icons {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
   span {
     cursor: pointer;
   }
@@ -33,19 +39,33 @@
     }
   }
 }
-
-@media (max-width: 1200px) {
-  .sectionLast {
-    width: 30%;
-  }
-}
-@media (max-width: 960px) {
-  .sectionLast {
-    width: 50%;
-  }
-}
 @media (max-width: 580px) {
   .sectionLast {
-    width: 50%;
+    width: 250px;
+    padding: 0px 10px;
+    .icons {
+      width: 25px;
+      height: 25px;
+    }
+    .avatar {
+      img {
+        width: 36px;
+        height: 36px;
+      }
+    }
+    .info {
+      p {
+        font-size: 12px;
+        padding-right: 1px;
+      }
+      span {
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
 }
+
+// @media (max-width:400px){
+//   .sectionLast
+// }

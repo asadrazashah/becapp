@@ -12,8 +12,8 @@ const Header: React.FC = () => {
         <div className="topHeaderBar">
             <ThemeButton title="Become Beeker" borderRadius="withRadius" />
             <div className="sectionLast">
-                <span><img src={iconMessage} alt="icon message" /></span>
-                <span><img src={iconNotification} alt="icon notification" /></span>
+                <span className="icons"><img src={iconMessage} alt="icon message" /></span>
+                <span className="icons"><img src={iconNotification} alt="icon notification" /></span>
                 <span className="avatar"><img src={avatar} alt="profile" /></span>
                 <span className="info"><p>Johan Doe</p><span><img src={arrow} alt="icon arrow" /></span></span>
             </div>
