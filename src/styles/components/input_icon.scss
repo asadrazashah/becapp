@@ -2,6 +2,7 @@
   outline: none !important;
   display: block;
   margin-bottom: 20px;
+  width: 100%;
   .input {
     width: 100%;
     height: 35px;
@@ -28,4 +29,7 @@
 }
 .iconPerson {
   background-image: url("../../assets/person.png");
+}
+.iconLocation {
+  background-image: url("../../assets/location.svg");
 }

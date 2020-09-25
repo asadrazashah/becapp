@@ -11,6 +11,18 @@ const Home: React.FC = () => {
         <div className="landingImg">
             <div className="txtHeading"><h4>Fast &nbsp; . &nbsp; </h4><h4>Secured &nbsp; . &nbsp; </h4><h4>Worldwide</h4></div>
             <h1 className="landingBigHeading">Secure <span>courier</span> and <span>delivery</span> services</h1>
+            <div className="movePackage">
+                <span className="title"><p></p><h4>Lets move your package</h4></span>
+                <div className="action">
+                    <div className="largeInput">
+                        <input
+                            className="input"
+                            placeholder="Enter Pickup Location"
+                        />
+                    </div>
+                    <button className="largeBtn">Post Now</button>
+                </div>
+            </div>
         </div>
         <div className="aboutUsLanding">
             <Grid container>
