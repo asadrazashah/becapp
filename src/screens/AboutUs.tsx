@@ -31,8 +31,8 @@ const AboutUs: React.FC = () => {
         <div className="wrapperService">
             <HeadingTypography backText="Service" frontText="Our service" />
             <Grid container style={{ paddingRight: "10%", paddingLeft: "10%" }}>
-                {serviceData.map((service: any) => {
-                    return (<Grid item xs={12} sm={12} md={4}>
+                {serviceData.map((service: any, index: any) => {
+                    return (<Grid item xs={12} sm={12} md={4} key={index}>
                         <ServiceCard service={service} />
                     </Grid>)
                 })}
@@ -43,17 +43,20 @@ const AboutUs: React.FC = () => {
             <Grid container style={{ paddingRight: "10%", paddingLeft: "10%" }}>
                 <Grid item xs={12} sm={12} md={4}>
                     <div className="chooseUsCards">
+                        <div className="line"></div>
                         <h3>TIMELY DELIVERY</h3>
                         <p>{content.chooseLoremText}</p>
                     </div>
                 </Grid>
                 <Grid item xs={12} sm={12} md={4}>
                     <div className="chooseUsCards">
+                        <div className="line"></div>
                         <h3>WORLD WIDE DELIVERY</h3>
                         <p>{content.chooseLoremText}</p>
                     </div></Grid>
                 <Grid item xs={12} sm={12} md={4}>
                     <div className="chooseUsCards">
+                        <div className="line"></div>
                         <h3>24/7 HOURS SUPPORT</h3>
                         <p>{content.chooseLoremText}</p>
                     </div></Grid>

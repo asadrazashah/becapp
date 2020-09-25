@@ -79,7 +79,8 @@
 .chooseUsCards {
   border: 1px solid #eee;
   padding: 20px 40px;
-  margin: 0px 10px;
+  margin: 0px 10px 10px 10px;
+  position: relative;
   h3 {
     font-size: 18px;
     font-weight: 800;
@@ -87,5 +88,13 @@
   }
   p {
     font-size: 14px;
+  }
+  .line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0px 20%;
+    border: 1px solid #f1c644;
   }
 }
