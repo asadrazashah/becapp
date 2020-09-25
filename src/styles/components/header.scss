@@ -40,9 +40,12 @@
   }
 }
 @media (max-width: 580px) {
+  .topHeaderBar {
+    padding: 0px 5%;
+  }
   .sectionLast {
-    width: 250px;
-    padding: 0px 10px;
+    width: 220px;
+    padding-left: 25px;
     .icons {
       width: 25px;
       height: 25px;
