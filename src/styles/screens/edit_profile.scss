@@ -1,0 +1,26 @@
+.browseInput {
+  display: flex;
+  align-items: center;
+  button {
+    background: #eeeeee;
+    border: 1px solid #eeeeee;
+    height: 41px;
+    padding: 0px 20px;
+    font-size: 14px;
+    color: #000;
+    outline: none;
+  }
+}
+.formEditProfile {
+  padding: 2% 10%;
+}
+#rowEditProfile {
+  padding: 10px 0px;
+}
+#colEditProfile {
+  padding-right: 10px;
+}
+.btnSave {
+  text-align: end;
+  padding: 20px 0px;
+}
