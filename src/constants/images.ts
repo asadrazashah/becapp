@@ -6,4 +6,5 @@ export default {
     e4: require("../assets/e4.png"),
     e5: require("../assets/e5.png"),
     e6: require("../assets/e6.png"),
+    landingGps: require("../assets/landingGps.png")
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import HeadingTypography from "../components/HeadingTypography";
+import Testimonial from "../components/Testimonial";
 import content from "../constants/content.json";
 import images from "../constants/images";
 import "../styles/screens/home.scss";
@@ -28,6 +29,45 @@ const Home: React.FC = () => {
                     <span className="ellipse f"><img src={images.e5} alt="ellipse" /></span>
                 </Grid>
             </Grid>
+        </div>
+        <div className="landingStepsSection">
+            <div className="sections">
+                <div className="steps">
+                    <h2 className="no">1.</h2>
+                    <span className="txt">
+                        <h4>{content.landingPageStepsHeading}</h4>
+                        <p>{content.ladningPageStepPara}</p>
+                    </span>
+                </div>
+            </div>
+            <div className="sections">
+                <div className="steps">
+                    <h2 className="no">2.</h2>
+                    <span className="txt">
+                        <h4>{content.landingPageStepsHeadingTwo}</h4>
+                        <p>{content.landingPageStepsParaTwo}</p>
+                    </span>
+                </div>
+            </div>
+            <div className="sections">
+                <div className="steps">
+                    <h2 className="no">3.</h2>
+                    <span className="txt">
+                        <h4>{content.landingPageStepsHeadingThree}</h4>
+                        <p>{content.landingPageStepsParaThree}</p>
+                    </span>
+                </div>
+            </div>
+            <div className="sections gpsImg"> <img src={images.landingGps} alt="gps" /></div>
+        </div>
+        <Testimonial overlay="dark" />
+        <div className="becomePartner">
+            <h2>{content.landingBecomePartner}</h2>
+            <div className="cards">
+                <span className="one">{content.txtOnePartner}</span>
+                <span className="two">{content.txtTwoPartner}</span>
+                <span className="three">{content.txtThreePartner}</span>
+            </div>
         </div>
     </>
 }
