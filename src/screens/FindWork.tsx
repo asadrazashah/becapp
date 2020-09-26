@@ -10,8 +10,8 @@ import "../styles/screens/jobs.scss"
 const FindWork: React.FC = () => {
     return <>
         <DescriptionPage title="FIND WORK" link="FIND WORK" />
-        <div>
-            <Grid container style={{ padding: "40px 80px" }}>
+        <div className="findWork">
+            <Grid container>
                 <Grid item xs={12} sm={12} md={9} lg={9}>
                     <JobCard job={Constants.jobData} />
                     <JobCard job={Constants.jobData} />

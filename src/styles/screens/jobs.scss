@@ -1,3 +1,18 @@
 .sidebarCards {
   padding-left: 25px;
 }
+.findWork {
+  padding: 3% 10%;
+}
+.myJobs {
+  padding: 3% 10%;
+}
+
+@media (max-width: 580px) {
+  .findWork {
+    padding: 2% 3%;
+  }
+  .myJobs {
+    padding: 2% 3%;
+  }
+}

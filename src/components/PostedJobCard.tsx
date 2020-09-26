@@ -19,7 +19,7 @@ const MyJobCard: React.FC<IProps> = ({ job }) => {
         </span>
         <h4>{heading}</h4>
         <p>{description}</p>
-        <div className="jobDetails">
+        <div className="postedJobCardDetails">
             <span className="rating">4.8 (24)</span>
             <div className="budget"><h5>Budget : </h5><span> $ 200</span></div>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import Login from "./screens/Login";
 import Header from "./components/Header";
 import Navbar from './components/Navbar';
@@ -54,6 +54,7 @@ function Routes() {
                     <Route exact path="/home/findwork/jobdetails" component={JobDetails} />
                     <Route exact path="/editprofile" component={EditProfile} />
                     <Route exact path="/home/job/proposal" component={ProposalDetails} />
+                    <Route exact path="*" render={() => <Redirect to="/home" />} />
                 </Switch>
             </>}
             <Footer />

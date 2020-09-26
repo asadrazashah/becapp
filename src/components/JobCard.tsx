@@ -17,7 +17,7 @@ const JobCard: React.FC<IProps> = ({ job }) => {
     return <div className="jobCard">
         <h4>{heading}</h4>
         <p>{description}</p>
-        <div className="jobDetails">
+        <div className="jobCardDetails">
             <div className="budget">
                 <span className="time">
                     <span>Fixed Price : </span><span>10 min ago</span>
