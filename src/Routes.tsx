@@ -21,6 +21,7 @@ import JobDetails from './screens/JobDetails';
 import Home from "./screens/Home";
 import EditProfile from './screens/EditProfile';
 import ProposalDetails from './screens/ProposalDetails';
+import Feedback from './screens/Feedback';
 
 function Routes() {
     let auth = true;
@@ -54,6 +55,7 @@ function Routes() {
                     <Route exact path="/home/findwork/jobdetails" component={JobDetails} />
                     <Route exact path="/editprofile" component={EditProfile} />
                     <Route exact path="/home/job/proposal" component={ProposalDetails} />
+                    <Route exact path="/feedback" component={Feedback} />
                     <Route exact path="*" render={() => <Redirect to="/home" />} />
                 </Switch>
             </>}
