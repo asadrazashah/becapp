@@ -52,3 +52,39 @@
     }
   }
 }
+
+.packageDetails {
+  padding: 2% 10%;
+}
+
+.addMorePackage {
+  padding: 30px 0px;
+  h4 {
+    color: $brown;
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-size: 22px;
+  }
+}
+.pickupContact {
+  h3 {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .MuiFormGroup-root {
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+  }
+}
+.react-icons {
+  vertical-align: middle;
+}
+#colStyle {
+  padding-right: 10px;
+}
+
+@media (max-width: 580px) {
+  #colStyle {
+    padding-bottom: 10px;
+  }
+}
