@@ -7,8 +7,9 @@ import InputSimple from "../../components/InputSimple";
 import TextArea from "../../components/TextArea";
 import { AiFillPlusCircle } from 'react-icons/ai';
 import { HiOutlineInformationCircle } from "react-icons/hi";
-import "../../styles/screens/post_job.scss";
 import ButtonLarge from "../../components/ButtonLarge";
+import "../../styles/screens/post_job.scss";
+
 interface IProps {
     next: () => void;
     previous: () => void;
