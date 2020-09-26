@@ -1,7 +1,7 @@
 import React from "react";
 import HeadingTypography from "../../components/HeadingTypography";
 import { Grid } from "@material-ui/core";
-import ThemeButton from "../../components/ThemeButton";
+import ButtonLarge from "../../components/ButtonLarge";
 import Label from "../../components/Label";
 import InputSimple from "../../components/InputSimple";
 import TextArea from "../../components/TextArea";
@@ -42,7 +42,7 @@ const PickupAddress: React.FC<IProps> = ({ next }) => {
                 </Grid>
             </Grid>
             <div className="btnEnd">
-                <ThemeButton onClick={next} title="View All" style={{ backgroundColor: "#000", color: '#fff', width: "228px", height: "60px", fontSize: "20px" }} borderRadius="withRadius" />
+                <ButtonLarge title="Next" color="black" mr onClick={next} />
             </div>
         </div>
     </>

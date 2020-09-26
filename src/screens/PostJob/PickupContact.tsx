@@ -1,7 +1,7 @@
 import React from "react";
 import HeadingTypography from "../../components/HeadingTypography";
 import { Grid, FormControlLabel, Radio, RadioGroup } from "@material-ui/core";
-import ThemeButton from "../../components/ThemeButton";
+import ButtonLarge from "../../components/ButtonLarge";
 import AddressDetail from "./AddressDetail";
 import Label from "../../components/Label";
 import InputSimple from "../../components/InputSimple";
@@ -15,9 +15,11 @@ const PickupContact: React.FC<IProps> = ({ next, previous }) => {
     return <>
         <HeadingTypography frontText="PICKUP ADDRESS" backText="PICKUP ADDRESS" />
         <div className="pickupAddressForm">
-            <div>
-                <AddressDetail width="30%" />
-            </div>
+            <Grid container>
+                <Grid item xs={12} sm={12} md={4}>
+                    <AddressDetail />
+                </Grid>
+            </Grid>
             <div className="formGroupJob">
                 <Label text="Pickup Contact" bold={true} />
                 <RadioGroup style={{ display: "flex" }}>
@@ -39,8 +41,8 @@ const PickupContact: React.FC<IProps> = ({ next, previous }) => {
                 </Grid>
             </Grid>
             <div className="btnEnd">
-                <ThemeButton onClick={previous} title="Back" style={{ backgroundColor: "#fff", color: '#000', width: "228px", height: "60px", fontSize: "20px", borderRadius: "8px", marginRight: "10px" }} />
-                <ThemeButton onClick={next} title="Next" style={{ backgroundColor: "#000", color: '#fff', width: "228px", height: "60px", fontSize: "20px", borderRadius: "8px" }} />
+                <ButtonLarge onClick={previous} title="Back" color="white" mr />
+                <ButtonLarge onClick={next} title="Next" color="black" mr />
             </div>
         </div>
     </>

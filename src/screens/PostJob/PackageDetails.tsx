@@ -66,7 +66,7 @@ const PackageDetails: React.FC<IProps> = ({ next, previous }) => {
             </div>
             <div className="btnEnd">
                 <ButtonLarge title="Back" color="white" mr onClick={previous} />
-                <ButtonLarge title="Next" color="black" onClick={next} />
+                <ButtonLarge title="Next" color="black" mr onClick={next} />
             </div>
         </div>
     </>
