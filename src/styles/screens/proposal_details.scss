@@ -1,0 +1,71 @@
+.proposalDetails {
+  padding: 3% 10%;
+}
+.jobDetails {
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  h2 {
+    font-weight: bold;
+    font-size: 36px;
+    padding: 10px 0px;
+  }
+  .addressCards {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  p {
+    color: #999;
+  }
+}
+.coverLetter {
+  margin-top: 20px;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  h2 {
+    font-weight: bold;
+    font-size: 36px;
+    padding: 20px 0px;
+  }
+  p {
+    padding: 20px 0px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #000;
+  }
+  .pricing {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    span {
+      display: flex;
+      align-items: center;
+      h4 {
+        font-weight: 500;
+        font-size: 16px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: normal;
+        color: #999;
+      }
+    }
+    .budget {
+      margin-right: 70px;
+    }
+  }
+}
+@media (max-width: 580px) {
+  .proposalDetails {
+    padding: 3% 5%;
+  }
+  .coverLetter {
+    .pricing {
+      .budget {
+        margin: 10px;
+      }
+    }
+  }
+}

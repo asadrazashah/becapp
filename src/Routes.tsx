@@ -20,6 +20,7 @@ import HowItWorks from './screens/HowItWorks';
 import JobDetails from './screens/JobDetails';
 import Home from "./screens/Home";
 import EditProfile from './screens/EditProfile';
+import ProposalDetails from './screens/ProposalDetails';
 
 function Routes() {
     let auth = true;
@@ -52,6 +53,7 @@ function Routes() {
                     <Route exact path="/home/working" component={HowItWorks} />
                     <Route exact path="/home/findwork/jobdetails" component={JobDetails} />
                     <Route exact path="/editprofile" component={EditProfile} />
+                    <Route exact path="/home/job/proposal" component={ProposalDetails} />
                 </Switch>
             </>}
             <Footer />
